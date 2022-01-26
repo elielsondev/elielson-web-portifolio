@@ -10,10 +10,11 @@ const INITIAL_STATE = {
 function reducer (state = INITIAL_STATE, action) {
   switch (action.type) {
     case USERINFO:
-      return { 
-        ...state,
-        user: action.payload
-      }
+      return {
+          ...state,
+          user: action.payload,
+        };
+
     default:
       return state;
   }

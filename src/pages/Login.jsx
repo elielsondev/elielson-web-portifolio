@@ -1,12 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { actionUserInfo } from '../redux/actions/index';
 
-function Login() {
+function Login({ userInfo }) {
+  const [name, setName] = useState('Visitante');
+  const [email, setEmail] = useState('visit@portfolio.com');
+
+  var validaEmail = /\S+@\S+\.\S+/;
+
+  function handleClick () {
+    userInfo({ name, email })
+  }
+
   return (
     <div>
-      <h1>Página em manutenção, voltaremos em breve</h1>
-      <h1>Page under maintenance, we'll be back soon</h1>
+      <label htmlFor="name">
+        Name:
+        <input type="text" name="name" id="name" onChange={ (e) => setName(e.target.value) } />
+      </label>
+      
+      <label htmlFor="email">
+        E-mail:
+        <input type="email" name="email" id="email" onChange={ (e) => setEmail(e.target.value) } />
+      </label>
+
+      <button
+        type="button"
+        onClick={ handleClick }
+        disabled={ !validaEmail.test(email) }
+      >
+        Acessar
+      </button>
     </div>
   );
 }
 
-export default Login;
+const mapDispatchToProps = (dispatch) => (
+  {
+    userInfo:(state) => dispatch(actionUserInfo(state))
+  }
+);
+
+Login.propTypes = {
+  user : PropTypes.object.isRequired
+}
+
+export default connect(null, mapDispatchToProps)(Login);
