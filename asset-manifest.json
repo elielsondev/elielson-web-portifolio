@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/elielsondev/elielson-web-portifolio/static/css/main.1ef3a49a.css",
-    "main.js": "/elielsondev/elielson-web-portifolio/static/js/main.f5109f4c.js",
+    "main.css": "/elielsondev/elielson-web-portifolio/static/css/main.e6c13ad2.css",
+    "main.js": "/elielsondev/elielson-web-portifolio/static/js/main.00d0b55b.js",
     "static/js/787.e6750aa4.chunk.js": "/elielsondev/elielson-web-portifolio/static/js/787.e6750aa4.chunk.js",
     "index.html": "/elielsondev/elielson-web-portifolio/index.html",
-    "main.1ef3a49a.css.map": "/elielsondev/elielson-web-portifolio/static/css/main.1ef3a49a.css.map",
-    "main.f5109f4c.js.map": "/elielsondev/elielson-web-portifolio/static/js/main.f5109f4c.js.map",
+    "main.e6c13ad2.css.map": "/elielsondev/elielson-web-portifolio/static/css/main.e6c13ad2.css.map",
+    "main.00d0b55b.js.map": "/elielsondev/elielson-web-portifolio/static/js/main.00d0b55b.js.map",
     "787.e6750aa4.chunk.js.map": "/elielsondev/elielson-web-portifolio/static/js/787.e6750aa4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ef3a49a.css",
-    "static/js/main.f5109f4c.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.00d0b55b.js"
   ]
 }
