@@ -6,6 +6,8 @@ import Portuguese from './pages/Portuguese';
 
 function App() {
   return (
+    // Como fazer um deploy no github pages:
+    // https://rodrilima.medium.com/react-como-fazer-o-deploy-no-github-pages-87f6a6fde370
     <Routes>
       <Route path="/" element={<Login />} />
       <Route path="portugues" element={<Portuguese />} />

@@ -47,11 +47,11 @@
 
 *Se a sua aplicação não terá outras páginas, não é necessário configurar as rotas. Caso contrário:
 
-- [ ] npm install react-router-dom@v5;
+- [x] npm install react-router-dom@v5;
       
 *Em src/index.js:
-- [ ] definir o BrowserRouter, <BrowserRouter>.
+- [x] definir o BrowserRouter, <BrowserRouter>.
       
 *No arquivo App.js:
-- [ ] definir o Routes, <Routes>; Antigo <Switch>
-- [ ] definir a Route, <Route>.
+- [x] definir o Routes, <Routes>; Antigo <Switch>
+- [x] definir a Route, <Route>.
