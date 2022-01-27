@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/elielson-web-portifolio/static/css/main.31102f41.css",
-    "main.js": "/elielson-web-portifolio/static/js/main.34824c8c.js",
+    "main.css": "/elielson-web-portifolio/static/css/main.41fee67c.css",
+    "main.js": "/elielson-web-portifolio/static/js/main.407ee38c.js",
     "static/media/pc.jpg": "/elielson-web-portifolio/static/media/pc.924e4ff7e48484e5df8d.jpg",
     "index.html": "/elielson-web-portifolio/index.html",
-    "main.31102f41.css.map": "/elielson-web-portifolio/static/css/main.31102f41.css.map",
-    "main.34824c8c.js.map": "/elielson-web-portifolio/static/js/main.34824c8c.js.map"
+    "main.41fee67c.css.map": "/elielson-web-portifolio/static/css/main.41fee67c.css.map",
+    "main.407ee38c.js.map": "/elielson-web-portifolio/static/js/main.407ee38c.js.map"
   },
   "entrypoints": [
-    "static/css/main.31102f41.css",
-    "static/js/main.34824c8c.js"
+    "static/css/main.41fee67c.css",
+    "static/js/main.407ee38c.js"
   ]
 }
