@@ -31,12 +31,10 @@ function Login({ userInfo }) {
         <h3>
           <span>&#128512;</span>
           SEJA BEM VINDO(A)
-          <span>&#128525;</span>
         </h3>
         <h3>
           <span>&#128512;</span>
           WELCOME!
-          <span>&#128525;</span>
         </h3>
 
         <label htmlFor="name" className="form-label">
