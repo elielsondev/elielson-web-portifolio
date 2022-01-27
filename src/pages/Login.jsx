@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { actionUserInfo } from '../redux/actions/index';
 import './css/Login.css';
 
 function Login({ userInfo }) {
-  const [name, setName] = useState("Visitante");
-  const [email, setEmail] = useState("visit@portfolio.com");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
   const [portugues, setPortugues] = useState(undefined)
 
   const validaEmail = /\S+@\S+\.\S+/;
@@ -19,10 +20,25 @@ function Login({ userInfo }) {
       e escolha um idioma que se sentir mais confortável
       e clique em acessar pra saber um pouco sobre mim.`)
   }, [])
+  
+  const navigate = useNavigate();
 
-  function handleClick() {
+  function handleClick(e) {
+    e.preventDefault();
+
     userInfo({ name, email });
+
+    if(portugues === undefined) { 
+      window.alert(`
+      Por favor, escolha qual idiomas em que você 
+        deseja prossegir clicando na bandeira.
+      Please choose which languages you
+       want to proceed by clicking on the flag.
+      `);}
+    if(portugues === true) { navigate('/portugues') }
+    if(portugues === false) { navigate('/english') }
   }
+
 
   return (
     <div id="Background" className="bg-primary.bg-gradient">
@@ -85,7 +101,7 @@ function Login({ userInfo }) {
             className="btn btn-primary"
             type="button"
             onClick={handleClick}
-            disabled={ !validaEmail.test(email) || portugues === undefined }
+            disabled={ !validaEmail.test(email) || name.length < 3 }
           >
             Acessar
           </button>
