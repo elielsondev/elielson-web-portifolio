@@ -15,13 +15,13 @@
 	box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
   flex-direction: column;
   align-items: center;
-  width: 450px;
-  height: 400px;
+  width: 400px;
+  height: 350px;
 }
 
 #Background {
   background: url('/src/pc.jpg');
-  padding: 8%;
+  padding: 10%;
   color:rgb(58, 97, 206);
   text-shadow: rgb(255, 255, 255) 2px 2px 2px;
   width: 100%;

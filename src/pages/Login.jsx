@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { actionUserInfo } from '../redux/actions/index';
@@ -13,6 +13,13 @@ function Login({ userInfo }) {
   const ENGLANDFLAG = 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Great_Britain_%281707%E2%80%931800%29.svg/1280px-Flag_of_Great_Britain_%281707%E2%80%931800%29.svg.png';
   const BRAZILFLAG = 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png';
 
+  useEffect(() => {
+    window.alert(`Olá, que bom ter você por aqui!
+      Por favor preencha a seguir o seu nome, e-mail
+      e escolha um idioma que se sentir mais confortável
+      e clique em acessar pra saber um pouco sobre mim.`)
+  }, [])
+
   function handleClick() {
     userInfo({ name, email });
   }
@@ -21,8 +28,16 @@ function Login({ userInfo }) {
     <div id="Background" className="bg-primary.bg-gradient">
       <div id="CardLogin" className="container-md">
 
-        <h1>SEJA BEM VINDO(A)!</h1>
-        <h1>WELCOME!</h1>
+        <h3>
+          <span>&#128512;</span>
+          SEJA BEM VINDO(A)
+          <span>&#128525;</span>
+        </h3>
+        <h3>
+          <span>&#128512;</span>
+          WELCOME!
+          <span>&#128525;</span>
+        </h3>
 
         <label htmlFor="name" className="form-label">
           Name:
