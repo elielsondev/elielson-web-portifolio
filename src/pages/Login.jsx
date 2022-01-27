@@ -15,10 +15,9 @@ function Login({ userInfo }) {
   const BRAZILFLAG = 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png';
 
   useEffect(() => {
-    window.alert(`Olá, que bom ter você por aqui!
-      Por favor preencha a seguir o seu nome, e-mail
-      e escolha um idioma que se sentir mais confortável
-      e clique em acessar pra saber um pouco sobre mim.`)
+    window.alert(`
+    Olá, que bom ter você por aqui!
+    Hi, nice to have you here!`)
   }, [])
   
   const navigate = useNavigate();
