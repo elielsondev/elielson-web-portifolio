@@ -7,9 +7,11 @@ function Portuguese({ userInfo }) {
   return (
     <div>
       <Header />
-      <h1>Portugues</h1>
-      <p>{ userInfo.name }</p>
-      <p>{ userInfo.email }</p>
+      <h1>Olá { userInfo.name }, seja bem vindo!!!</h1>
+      <h1>Apresentação</h1>
+      <h1>Objetivo Profissional</h1>
+      <h1>Meus melhores projetos</h1>
+      <h1>Meus certificados</h1>
     </div>
   );
 }

@@ -7,9 +7,7 @@ function English({ userInfo }) {
   return (
     <div>
       <Header />
-      <h1>English</h1>
-      <p>{ userInfo.name }</p>
-      <p>{ userInfo.email }</p>
+      <h1>Hey { userInfo.name }, welcome!!!</h1>
     </div>
   );
 }
